@@ -1,0 +1,58 @@
+# ==========================
+# FinFlow .gitignore
+# ==========================
+
+# --- Java / Maven ---
+backend/target/
+*.class
+*.log
+*.jar
+!backend/.mvn/wrapper/maven-wrapper.jar
+*.war
+*.ear
+
+# --- Maven downloaded zip (temp) ---
+backend/maven-3.9.6-bin.zip
+backend/maven-wrapper.zip
+
+# --- IDE ---
+.idea/
+*.iml
+.vscode/
+*.swp
+*.swo
+*~
+.classpath
+.project
+.settings/
+.factorypath
+nbproject/
+nbactions*.xml
+.nb-gradle/
+
+# --- Node / Frontend ---
+frontend/node_modules/
+frontend/dist/
+frontend/.cache/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# --- Environment / Secrets ---
+.env
+.env.local
+.env.*.local
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Local tools ---
+tools/
+
+# --- Misc ---
+*.bak
+*.tmp
+
+tools/apache-maven-*/
